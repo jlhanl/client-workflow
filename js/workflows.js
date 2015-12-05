@@ -10,4 +10,9 @@ var mySchedule = [
   {"value": 9, name: "Deliver goods and thank you"}
 ];
 
-  TimeKnots.draw("#timeline1", mySchedule, {horizontalLayout: false, color: "#669", height: 450, width:200, showLabels: false, dateDimension: false, labelFormat:"%Y"});
+TimeKnots.draw("#timeline1", mySchedule, {horizontalLayout: false, color: "#669", height: 500, width:100, radius: 15, showLabels: false, dateDimension: false, labelFormat:"%Y"});
+TimeKnots.draw("#timeline2", mySchedule, {horizontalLayout: false, color: "#669", height: 500, width:100, radius: 15, showLabels: false, dateDimension: false, labelFormat:"%Y"});
+TimeKnots.draw("#timeline3", mySchedule, {horizontalLayout: false, color: "#669", height: 500, width:100, radius: 15, showLabels: false, dateDimension: false, labelFormat:"%Y"});
+TimeKnots.draw("#timeline4", mySchedule, {horizontalLayout: false, color: "#669", height: 500, width:100, radius: 15, showLabels: false, dateDimension: false, labelFormat:"%Y"});
+TimeKnots.draw("#timeline5", mySchedule, {horizontalLayout: false, color: "#669", height: 500, width:100, radius: 15, showLabels: false, dateDimension: false, labelFormat:"%Y"});
+TimeKnots.draw("#timeline6", mySchedule, {horizontalLayout: false, color: "#669", height: 500, width:100, radius: 15, showLabels: false, dateDimension: false, labelFormat:"%Y"});
