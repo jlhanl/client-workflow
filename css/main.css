@@ -2,6 +2,16 @@ body {
   font-family: "neuzeit-grotesk";
   color: rgb(74, 74, 74);
 }
+
+.navbar {
+  min-height: 60px;
+  border: none;
+}
+
+.navbar-brand {
+  padding: 5px 30px;
+}
+
 table {
   width: 100%;
 }
@@ -11,7 +21,6 @@ th {
   border-bottom-color: rgba(226, 226, 226, 1);
   text-align: center;
   padding: 2rem;
-  padding-bottom: 3rem;
   font-size: 16px;
   font-weight: 400;
 }
@@ -26,7 +35,7 @@ td {
 }
 
 .odd {
-  background-color: rgba(226, 226, 226, 1);
+  background-color: #f8f8f8;
 }
 
 .studio-name {
@@ -49,6 +58,7 @@ td {
 col {
   width: 150px;
 }
+
 .task-name {
   width: 250px;
   text-transform: uppercase;
@@ -60,10 +70,14 @@ col {
   r: 20px;
   cy: 25px;
   cx: 25px;
-  fill: rgba(226, 226, 226, 1);
+  fill: #f8f8f8;
   stroke-width: 2;
-  stroke: rgba(151, 151, 151, 1);
+  stroke: rgb(74, 74, 74);
+  transition: .3s ease-in-out;
 }
 
+circle.dot:hover {
+  background-color: yellow;
+}
 
 
