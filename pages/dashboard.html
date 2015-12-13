@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>daily dots homepage</title>
+    <title>dot Dashboard</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS-->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main Style Sheet CSS-->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+ 
 
     <!-- Fonts -->
     <script src="https://use.typekit.net/phn7pbg.js"></script>
@@ -49,171 +51,320 @@
       </div><!-- /.container-fluid -->
     </nav>
     <header class="studio-name">
-      <h4>my studio photography</h4>
-    </header>
-    <main>
       <div class="row">
         <div class="col-md-12">
-          <table>
-            <colgroup>
-              <col span="2" class="even">
-              <col class="odd">
-              <col class="even">
-              <col class="odd">
-            </colgroup>
-            <tr>
-              <th><button class="btn btn-default" type="submit">Add new task</button>
-              </th>
-              <th>The Miller Family</th>
-              <th>Baby Jackson</th>
-              <th>Mahlberg Mini Session</th>
-              <th><button class="btn btn-default" type="submit">Add new client</button>
-            </tr>
-            <tr>
-              <td class="task-name">send welcome packet &amp; session info</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="open-event dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Collect session fee and contract</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="open-event dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Shoot and download session</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Sort and edit session</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Blog session &amp; email client</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Upload gallery &amp; send invitation</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Schedule order session</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Design album/Place order</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="dot" />
-                </svg>
-              </td>
-            </tr>
-            <tr>
-              <td class="task-name">Deliver goods &amp; send thanks</td>
-              <td class="dot-cell">
-                <svg width="50" height="50">
-                  <circle class="dot" />
-                </svg>
-              </td>
-            </tr>
-
-
-            
-          </table>
+          <h4>my studio photography</h4>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <table class="table-striped">
+              <colgroup>
+                <col span="2" class="even">
+                <col class="odd">
+                <col class="even">
+                <col class="odd">
+              </colgroup>
+              <tr>
+                <th><button class="btn btn-default" type="submit">Add new task</button>
+                </th>
+                <th>The Miller Family</th>
+                <th>Baby Jackson</th>
+                <th>Mahlberg Mini Session</th>
+                <th><button class="btn btn-default" type="submit">Add new client</button>
+              </tr>
+              <tr>
+                <td class="task-name">send welcome packet &amp; session info</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70" id="client1">
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70" id="client1">
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70" id="client1">
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70" id="client1">
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Collect session fee and contract</td>
+                <td class="dot-cell" id="client1">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <style>
+                     circle:hover
+                       {
+                           opacity: 1;
+                           r: 24;
+                        }
+                    </style> -->
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70" id="client1">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Shoot and download session</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Sort and edit session</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Blog session &amp; email client</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Upload gallery &amp; send invitation</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Schedule order session</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Design album/Place order</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                    <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="task-name">Deliver goods &amp; send thanks</td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                  </svg>
+                </td>
+                <td class="dot-cell">
+                  <svg width="50" height="70">
+                    <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                    <circle class="open-event dot" />
+                  </svg>
+                </td>
+              </tr>
+              
+            </table>
+          </div>
         </div>
       </div>
     </main>
-    <!-- <section class="client-flows">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-1">
-              <h5 class="shoot-name">The Miller Family</h5>
-              <div id="timeline1" class="timeline">
-                <svg width="50" height="50">
-                  <circle class="event" r="20" cy="25" cx="25" stroke="black" stroke-width="2" fill="green" />
-                </svg>
-              </div>
-            </div>
-            <div class="col-md-1"> 
-              <h5 class="shoot-name">The Miller Family</h5>
-              <div id="timeline2" class="timeline"></div>
-            </div>
-            <div class="col-md-1"> 
-              <h5 class="shoot-name">The Miller Family</h5>
-              <div id="timeline3" class="timeline"></div>
-            </div>
-            <div class="col-md-1"> 
-              <h5 class="shoot-name">The Miller Family</h5>
-              <div id="timeline4" class="timeline"></div>
-            </div> 
-            <div class="col-md-1"> 
-              <h5 class="shoot-name">The Miller Family</h5>
-              <div id="timeline5" class="timeline"></div>
-            </div> 
-            <div class="col-md-1"> 
-              <h5 class="shoot-name">The Miller Family</h5>
-              <div id="timeline6" class="timeline"></div>
-            </div>   
-          </div>      
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-1">
-            
-          </div>
-          <div class="col-md-1"> 
-          </div>
-          <div class="col-md-1"> 
-          </div>
-          <div class="col-md-1"> 
-          </div> 
-          <div class="col-md-1"> 
-          </div> 
-          <div class="col-md-1"> 
-          </div>   
-        </div>      
-      </div>
-    </section> -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap/bootstrap.min.js"></script>
-<!--     <script src="../js/d3/d3.js"></script>
-   <script src="../js/timeknots/timeknots.js"></script> -->
-    <script src="../js/workflows.js"></script>
   </body>
 </html>
