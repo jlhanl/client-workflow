@@ -13,7 +13,6 @@ body {
 }
 
 table {
-  width: 100%;
   border-left: 2px solid;
   border-right: 2px solid;
   border-color: rgba(226, 226, 226, 1);
@@ -32,7 +31,6 @@ th {
 tr {
   text-align: center;
   height: 70px;
-  line-height: 0;
 }
 
 td {
@@ -44,10 +42,10 @@ td {
 }
 
 .studio-name {
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   font-weight: 600;
-  float: right;
+  float: left;
   margin: 2rem;
 }
 
@@ -60,9 +58,9 @@ td {
   text-align: center;
 }
 
-col {
+/*col {
   width: 150px;
-}
+}*/
 
 .task-name {
   width: 250px;
