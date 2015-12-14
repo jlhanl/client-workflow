@@ -1,5 +1,5 @@
 body {
-  font-family: "neuzeit-grotesk";
+  font-family: "freight-sans-pro";
   color: rgb(74, 74, 74);
   line-height: 0;
 }
@@ -23,25 +23,30 @@ body {
   padding: 5px 30px;
 }
 
+.navbar-brand img {
+  height: 50px;
+}
+
 .navbar-right {
   padding-top: 5px;
 }
 
 table {
-  border-left: 1px solid;
-  border-right: 1px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
   border-color: rgba(226, 226, 226, 1);
   width: 100%;
+  margin-top: 2rem;
 }
 
 th {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
   border-color: rgba(226, 226, 226, 1);
   text-align: center;
   padding: 2rem;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.42857143
 }
 
@@ -69,6 +74,7 @@ td {
 .shoot-name {
   text-align: center;
   margin: 2rem auto;
+  text-transform: uppercase;
 }
 
 .timeline {
@@ -81,9 +87,8 @@ td {
 
 .task-name {
   width: 250px;
-  text-transform: uppercase;
+  font-family: "freight-sans-pro";
   font-size: 16px;
-  font-weight: 300;
   line-height: 1.42857143;
 }
 
@@ -91,11 +96,10 @@ td {
   r: 20px;
   cy: 40px;
   cx: 25px;
-  fill: rgba(255, 217, 0, 1);
+  fill: #FFFFFF;
   stroke-width: 2;
   stroke: rgba(226, 226, 226, 1);
   transition: .3s ease-in-out;
-  opacity: 0.5;
 }
 
 .bottom-line { 
@@ -120,6 +124,19 @@ svg {
 }*/
 
 .btn {
-  background-color: #4AAAA5;
+  color: #FFFFFF;
+  background-color: rgba(57, 169, 164, 1);
+  box-shadow: 2px 1px 1px rgba(226, 226, 226, 1);
+  border-radius: 0;
+  border: none;
+  font-weight: 600;
 }
 
+.btn:hover {
+  background-color: rgba(57, 169, 164, 0.8);
+  color: #FFFFFF;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(249, 249, 249, .5);
+}
