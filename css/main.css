@@ -1,31 +1,48 @@
 body {
   font-family: "neuzeit-grotesk";
   color: rgb(74, 74, 74);
+  line-height: 0;
 }
 
 .navbar {
   min-height: 60px;
   border: none;
+  background-color: #35404F;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgba(249, 249, 249, .5);
 }
 
 .navbar-brand {
   padding: 5px 30px;
 }
 
+.navbar-right {
+  padding-top: 5px;
+}
+
 table {
-  border-left: 2px solid;
-  border-right: 2px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
   border-color: rgba(226, 226, 226, 1);
+  width: 100%;
 }
 
 th {
-  border-bottom: 2px solid;
-  border-top: 2px solid;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
   border-color: rgba(226, 226, 226, 1);
   text-align: center;
   padding: 2rem;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.42857143
 }
 
 tr {
@@ -38,7 +55,7 @@ td {
 }
 
 .odd {
-  background-color: rgba(226, 226, 226, 0.1);
+  background-color: rgba(249, 249, 249, .5);
 }
 
 .studio-name {
@@ -67,6 +84,7 @@ td {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;
+  line-height: 1.42857143;
 }
 
 .dot {
@@ -99,6 +117,9 @@ svg {
 
 /*circle.open-event.dot:hover {
   opacity: 0.2;
-}*?
+}*/
 
+.btn {
+  background-color: #4AAAA5;
+}
 
