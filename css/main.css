@@ -144,13 +144,14 @@ svg {
 
 /****** RESPONSIVENESS *****/
 
-@media (max-width: 768px) {
+/**@media (max-width: 768px) {
 
   .client-four {
     visibility: hidden;
     display: none;
   }
 }
+**/
 
 @media screen and (max-width: 767px) {
 
@@ -159,6 +160,7 @@ svg {
   }
 }
 
+/*
 
 @media (max-width: 600px) {
   .client-four {
@@ -171,7 +173,7 @@ svg {
     display: none;
   }
 }
-
+***/
 
 
 
