@@ -65,21 +65,17 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="table-responsive">
-              <table class="table-striped" data-tablesaw-mode="swipe">
-                <colgroup>
-                  <col span="2" class="even">
-                  <col class="odd">
-                  <col class="even">
-                  <col class="odd" id="last">
-                </colgroup>
+              <table class="table-striped table-saw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
                 <thead>
                   <tr class="top-row">
-                    <th class="new-buttons"><button class="btn btn-default" type="submit" data-tablesaw-priority="persist"> NEW TASK</button>
+                    <th class="new-buttons">
+                      <button class="btn btn-default" type="submit" data-tablesaw-priority="persist"> NEW TASK</button>
+                      <button class="btn btn-default" type="submit">NEW CLIENT</button>
                     </th>
-                    <th class="client-one" data-tablesaw-priority="1">Miller Family</th>
-                    <th class="client-two" data-tablesaw-priority="2">Baby Jackson</th>
-                    <th class="client-three" data-tablesaw-priority="3">Mahlberg Mini</th>
-                    <th class="client-four" data-tablesaw-priority="4"><button class="btn btn-default" type="submit">NEW CLIENT</button></th>
+                    <th scope="col" class="client-one" data-tablesaw-priority="1">Miller Family</th>
+                    <th scope="col" class="client-two" data-tablesaw-priority="2">Baby Jackson</th>
+                    <th scope="col" class="client-three" data-tablesaw-priority="3">Mahlberg Mini</th>
+                    <th scope="col" class="client-four" data-tablesaw-priority="4">Jordan Mini</th>
                   </tr>
                 </thead>
                 <tbody>
