@@ -31,6 +31,10 @@ body {
   padding-top: 5px;
 }
 
+i {
+  color: #ffffff;
+}
+
 table {
   border-left: 2px solid;
   border-right: 2px solid;
@@ -48,6 +52,10 @@ th {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.42857143
+}
+
+.new-buttons {
+  font-size: 10px;
 }
 
 tr {
@@ -88,7 +96,8 @@ td {
   font-size: 16px;
   line-height: 1.42857143;
   text-align: left;
-  padding-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-transform: uppercase;
 }
 
@@ -126,19 +135,23 @@ svg {
 .btn {
   color: #FFFFFF;
   background-color: rgba(57, 169, 164, 1);
-  box-shadow: 2px 1px 1px rgba(226, 226, 226, 1);
   border-radius: 0;
   border: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .btn:hover {
   background-color: rgba(57, 169, 164, 0.8);
   color: #FFFFFF;
-}
+} 
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: rgba(249, 249, 249, .5);
+}
+
+.add-buttons {
+  padding-top: 10px;
+  padding-right: 15px;
 }
 
 

@@ -13,8 +13,11 @@
     <!-- Main Style Sheet CSS-->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 
-        <!-- Table Saw CSS -->
+    <!-- Table Saw CSS -->
     <link rel="stylesheet" href="../css/tablesaw.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
  
     <!-- Fonts -->
     <script src="https://use.typekit.net/phn7pbg.js"></script>
@@ -23,6 +26,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/tablesaw.js"></script>
     <script src="../js/tablesaw-init.js"></script>
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,7 +57,12 @@
           <ul class="nav navbar-nav">
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a>RUTH MARIE PHOTOGRAPHY</a></li>
+            <li class="add-buttons">
+              <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  NEW TASK</button>
+            </li>
+            <li class="add-buttons">
+              <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span>  NEW SHOOT</button>
+            </li>
             <li><a href="index.html">Sign Out</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -68,10 +78,7 @@
               <table class="table-striped table-saw-swipe" data-tablesaw-mode="swipe" data-tablesaw-minimap>
                 <thead>
                   <tr class="top-row">
-                    <th class="new-buttons">
-                      <button class="btn btn-default" type="submit" data-tablesaw-priority="persist"> NEW TASK</button>
-                      <button class="btn btn-default" type="submit">NEW CLIENT</button>
-                    </th>
+                    <th scope="col" data-tablesaw-priority="persist">WORKFLOW</th>
                     <th scope="col" class="client-one" data-tablesaw-priority="1">Miller Family</th>
                     <th scope="col" class="client-two" data-tablesaw-priority="2">Baby Jackson</th>
                     <th scope="col" class="client-three" data-tablesaw-priority="3">Mahlberg Mini</th>
@@ -89,20 +96,20 @@
                     </td>
                     <td class="client-two">
                       <svg>
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />   
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />
                       </svg>
                     </td>
                   </tr>
@@ -111,6 +118,7 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
                         <style>
                          circle:hover
@@ -118,29 +126,28 @@
                               fill: rgba(53, 64, 79, 1);
                               r: 24;
                             }
-                        </style> -->
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        </style>
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -149,29 +156,29 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />        
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -180,29 +187,29 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />        
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -211,29 +218,29 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -242,29 +249,29 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />        
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
                       </svg>
                     </td>
                   </tr>
@@ -273,29 +280,29 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
                       </svg>
                     </td>
                   </tr>
@@ -304,29 +311,29 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle class="open-event dot" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
+                        <circle class="open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
+                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <circle class="open-event dot" />
-                        <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />         
                       </svg>
                     </td>
                   </tr>
