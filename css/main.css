@@ -7,7 +7,7 @@ body {
 .navbar {
   min-height: 60px;
   border: none;
-  background-color: #35404F;
+  background-color: #FFFFFF;
   border-radius: 0;
 }
 
@@ -133,16 +133,16 @@ svg {
 }*/
 
 .btn {
-  color: #FFFFFF;
-  background-color: rgba(57, 169, 164, 1);
-  border-radius: 0;
-  border: none;
+  color: #3fb0ac;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid #3fb0ac;
   font-weight: 400;
 }
 
 .btn:hover {
-  background-color: rgba(57, 169, 164, 0.8);
-  color: #FFFFFF;
+  background-color: rgba(249, 249, 249, .5);
+  color: #3fb0ac;
 } 
 
 .table-striped > tbody > tr:nth-of-type(odd) {

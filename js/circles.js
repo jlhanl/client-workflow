@@ -1,12 +1,40 @@
+//Set Circle IDs
+var circleElements = document.querySelectorAll('.circle');
+
+//console.log(circleElements);
+
+//var setCircleIds = function(circleElements) {  
+  //for (var i = 0; i < circleElements.length; i++) {
+    //circleElements[i].id = 'circle' + i;
+  //}
+  //return setCircleIds;
+//}
+
+console.log(circleElements);
+
+
+  
+
+
 $(document).ready(function () {
 
-    var flag = true; // take a flag here
+  //document.getElementsByClassName("circle").className = "MyClass";
 
-    $(".open-event").click(function () {
-        flag = false; // reset flag
-        $(".open-event").css('fill', '158844');
-        $(".open-event").css('stroke', '158844');
-    });
+//jQuery//
+
+  //$(".circle").each(function(i) {
+    //  $(this).attr('id', "circle" + (i + 1));
+  //});
+  $('.circle').click(function(){    
+    var id = event.target.id;
+    $('#' + id).css('fill', 'E1704B');
+    console.log(id);
+    //console.log('id = ' + id); 
+  });
+
+  $(".circle").click(function () {
+      $("this").css('fill', 'E1704B');
+  });
 
 });
 
