@@ -1,4 +1,5 @@
 body {
+  background-color: #FFFFFF;
   font-family: "freight-sans-pro";
   color: rgb(74, 74, 74);
   line-height: 0;
@@ -7,12 +8,17 @@ body {
 .navbar {
   min-height: 60px;
   border: none;
-  background-color: #FFFFFF;
+  background-color: rgba(238, 238, 238, 1);
   border-radius: 0;
+  margin-bottom: 0;
+}
+
+.dashboard-nav {
+  margin-bottom: 4rem;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: white;
+  color: #173e43;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -25,6 +31,7 @@ body {
 
 .navbar-brand img {
   height: 50px;
+
 }
 
 .navbar-right {
@@ -128,12 +135,8 @@ svg {
   height: 80px;
 }
 
-/*circle.open-event.dot:hover {
-  opacity: 0.2;
-}*/
-
 .btn {
-  color: #3fb0ac;
+  color: #3FB0AC;
   background-color: transparent;
   border-radius: 2px;
   border: 2px solid #3fb0ac;
@@ -146,7 +149,7 @@ svg {
 } 
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: rgba(249, 249, 249, .5);
+  background-color: rgba(238, 238, 238, 0.8);
 }
 
 .add-buttons {
@@ -154,7 +157,9 @@ svg {
   padding-right: 15px;
 }
 
-
+#hidden {
+  display: none;
+}
 /****** RESPONSIVENESS *****/
 
 /**@media (max-width: 768px) {

@@ -10,7 +10,7 @@ var circleElements = document.querySelectorAll('.circle');
   //return setCircleIds;
 //}
 
-console.log(circleElements);
+//console.log(circleElements);
 
 
   
@@ -18,33 +18,13 @@ console.log(circleElements);
 
 $(document).ready(function () {
 
-  //document.getElementsByClassName("circle").className = "MyClass";
 
-//jQuery//
-
-  //$(".circle").each(function(i) {
-    //  $(this).attr('id', "circle" + (i + 1));
-  //});
   $('.circle').click(function(){    
     var id = event.target.id;
-    $('#' + id).css('fill', 'E1704B');
     console.log(id);
-    //console.log('id = ' + id); 
-  });
-
-  $(".circle").click(function () {
-      $("this").css('fill', 'E1704B');
+    $('#' + id).css('fill', '3FB0AC'); 
   });
 
 });
 
-var openEvent = document.getElementsByClassName('open-event')[0];
 
-openEvent.addEventListener("click", function(event) {
-   openEvent[0].style.fill = "red";
-});
-
-function circleClick(event) {
-  var circle = event.target;
-  circle.setAttribute("fill", "red");
-};
