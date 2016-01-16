@@ -160,6 +160,14 @@ svg {
 #hidden {
   display: none;
 }
+
+.tablesaw-advance .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  text-shadow: 0;
+  border-radius: 0;
+}
 /****** RESPONSIVENESS *****/
 
 /**@media (max-width: 768px) {
@@ -182,6 +190,11 @@ svg {
   .table-container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  table {
+    border-left: none;
+    border-right: none;
   }
 }
 
