@@ -171,10 +171,17 @@ svg {
 }
 **/
 
+
+
 @media screen and (max-width: 767px) {
 
   .table-responsive {
     border: none;
+  }
+
+  .table-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
