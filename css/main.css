@@ -42,6 +42,10 @@ i {
   color: #ffffff;
 }
 
+h1 {
+  text-align: center;
+}
+
 table {
   border-left: 2px solid;
   border-right: 2px solid;
@@ -168,17 +172,9 @@ svg {
   text-shadow: 0;
   border-radius: 0;
 }
-/****** RESPONSIVENESS *****/
 
-/**@media (max-width: 768px) {
 
-  .client-four {
-    visibility: hidden;
-    display: none;
-  }
-}
-**/
-
+/****** MEDIA QUERIES *****/
 
 
 @media screen and (max-width: 767px) {
@@ -196,22 +192,37 @@ svg {
     border-left: none;
     border-right: none;
   }
+
+  .tablesaw-advance {
+    float: none;
+    clear: none;
+  }
+
+  .tablesaw-nav-btn.btn.btn-micro.left {
+    float: left;
+  }
+
+  .tablesaw-nav-btn.btn.btn-micro.right {
+    float: right;
+  }
+
+  .tablesaw-advance-dots {
+    float: none;
+    margin-left: 47%;
+  }
+
+
 }
 
-/*
+@media screen and (min-width: 768px) {
 
-@media (max-width: 600px) {
-  .client-four {
-    visibility: hidden;
+  .phone-show {
     display: none;
   }
 
-  .client-three {
-    visibility: hidden;
-    display: none;
-  }
 }
-***/
+
+
 
 
 
