@@ -97,10 +97,6 @@ td {
   text-align: center;
 }
 
-/*col {
-  width: 150px;
-}*/
-
 .task-name {
   width: 250px;
   font-family: "freight-sans-pro";
@@ -211,7 +207,46 @@ svg {
     margin-left: 47%;
   }
 
+  .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn {
+    width: 4em;
+    height: 4em;
+  }
 
+  .tablesaw-enhanced .tablesaw-bar .btn {
+    clear: none;
+    background-image: none;
+    border: none;
+    background-color: #FFFFFF;
+  }
+
+  .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before {
+    left: .7em;
+    border-right: 25px solid #808080;
+  }
+
+  .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before {
+    left: .7em;
+    border-left: 25px solid #808080;
+  }
+
+
+  .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before, .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before {
+    top: .5em;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+
+/***
+    position: absolute;
+    / font-size: 95px; /
+    top: -35px;
+    right: 5px;
+    width: 3em;
+    height: 3em;
+    border: none;
+    background: red;
+
+**/
 }
 
 @media screen and (min-width: 768px) {
