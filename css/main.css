@@ -161,12 +161,49 @@ svg {
   display: none;
 }
 
-.tablesaw-advance .btn {
+/**.tablesaw-advance .btn {
   -webkit-appearance: none;
   -moz-appearance: none;
   box-sizing: border-box;
   text-shadow: 0;
   border-radius: 0;
+}**/
+
+.dashboard-nav {
+  margin-bottom: 1rem;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn {
+  width: 4em;
+  height: 4em;
+  margin-top: 0;
+}
+
+.tablesaw-enhanced .tablesaw-bar .btn {
+  clear: none;
+  background-image: none;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before {
+  left: .7em;
+  border-right: 25px solid #808080;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  left: .7em;
+  border-left: 25px solid #808080;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before, .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  top: .5em;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.tablesaw-advance.minimap {
+  padding-top: 1.25rem;
 }
 
 
@@ -237,7 +274,6 @@ svg {
     left: .7em;
     border-left: 25px solid #808080;
   }
-
 
   .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before, .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.right:before {
     top: .5em;
