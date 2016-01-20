@@ -175,6 +175,14 @@ svg {
 
 @media screen and (max-width: 767px) {
 
+  .dashboard-nav {
+    margin-bottom: 0;
+  }
+
+  .navbar-brand {
+    padding-left: 10px;
+  }
+
   .table-responsive {
     border: none;
   }
@@ -210,6 +218,7 @@ svg {
   .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn {
     width: 4em;
     height: 4em;
+    margin-top: 0;
   }
 
   .tablesaw-enhanced .tablesaw-bar .btn {
@@ -234,6 +243,10 @@ svg {
     top: .5em;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
+  }
+
+  .tablesaw-advance.minimap {
+    padding-top: 1.25rem;
   }
 
 /***
