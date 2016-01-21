@@ -42,6 +42,10 @@ i {
   color: #ffffff;
 }
 
+.mobile-nav {
+  background-color: rgba(238, 238, 238, 1);
+}
+
 h1 {
   text-align: center;
 }
@@ -161,6 +165,17 @@ svg {
   display: none;
 }
 
+.mobile-add-buttons li {
+  list-style-type: none;
+}
+
+.mobile-add-buttons button {
+  height: 3rem;
+  color: #FFFFFF;
+  background-color: #173E43;
+  border: none;
+}
+
 /**.tablesaw-advance .btn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -184,6 +199,7 @@ svg {
   background-image: none;
   border: none;
   background-color: #FFFFFF;
+  box-shadow: none;
 }
 
 .tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn.left:before {
