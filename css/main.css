@@ -13,8 +13,20 @@ body {
   margin-bottom: 0;
 }
 
+.container-fluid, .navbar-header {
+  min-height: 60px;
+}
+
 .dashboard-nav {
   margin-bottom: 4rem;
+}
+
+.navbar-toggle {
+  margin-top: 15px;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -300,6 +312,7 @@ svg {
   .tablesaw-advance.minimap {
     padding-top: 1.25rem;
   }
+
 
 /***
     position: absolute;
