@@ -8,7 +8,7 @@ body {
 .navbar {
   min-height: 60px;
   border: none;
-  background-color: rgba(238, 238, 238, 1);
+  background-color: #FFFFFF;
   border-radius: 0;
   margin-bottom: 0;
 }
@@ -152,25 +152,22 @@ svg {
 }
 
 .btn {
-  color: #3FB0AC;
-  background-color: transparent;
-  border-radius: 2px;
-  border: 2px solid #3fb0ac;
+  color: #FFFFFF;
+  background-color: #426164;
   font-weight: 400;
 }
 
 .btn:hover {
-  background-color: rgba(249, 249, 249, .5);
-  color: #3fb0ac;
+  background-color: #173E43;
+  color: #FFFFFF;
 } 
+
+.btn-blk {
+  border-radius: 0;
+}
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: rgba(238, 238, 238, 0.8);
-}
-
-.add-buttons {
-  padding-top: 10px;
-  padding-right: 15px;
 }
 
 #hidden {
@@ -186,6 +183,10 @@ svg {
   color: #FFFFFF;
   background-color: #173E43;
   border: none;
+}
+
+ul.nav.navbar {
+  margin-top: 0;
 }
 
 /**.tablesaw-advance .btn {
