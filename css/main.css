@@ -164,6 +164,7 @@ svg {
 
 .btn-blk {
   border-radius: 0;
+  height: 5rem;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
@@ -172,6 +173,11 @@ svg {
 
 #hidden {
   display: none;
+}
+
+li#signout {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .mobile-add-buttons li {
@@ -185,9 +191,6 @@ svg {
   border: none;
 }
 
-ul.nav.navbar {
-  margin-top: 0;
-}
 
 /**.tablesaw-advance .btn {
   -webkit-appearance: none;
@@ -247,6 +250,15 @@ ul.nav.navbar {
 
   .navbar-brand {
     padding-left: 10px;
+  }
+
+  .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ul.navbar-nav {
+    margin-top: 0;
   }
 
   .table-responsive {
