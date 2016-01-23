@@ -1,14 +1,14 @@
 body {
   background-color: #FFFFFF;
-  font-family: "freight-sans-pro";
-  color: rgb(74, 74, 74);
+  font-family: 'Open Sans', sans-serif;
+  color: #777777;
   line-height: 0;
 }
 
 .navbar {
   min-height: 60px;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #426164;
   border-radius: 0;
   margin-bottom: 0;
 }
@@ -25,12 +25,12 @@ body {
   margin-top: 15px;
 }
 
-.navbar-default .navbar-toggle {
-  border: none;
+.navbar-default .navbar-nav>li>a {
+  color: #FFFFFF;
 }
 
-.navbar-default .navbar-nav>li>a {
-  color: #173e43;
+.navbar-default .navbar-toggle {
+  border: none;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -51,6 +51,10 @@ body {
 }
 
 /** X animation for mobile nav icon **/
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFFFFF;
+}
 
 .navbar-toggle {
   border: none;
@@ -84,19 +88,45 @@ body {
   transform: rotate(0);
 }
 
+
 /************************************************/
 
 
-i {
-  color: #ffffff;
+.title-container {
+  color: #777777;
+  background-color: #FFFFFF;
+}
+
+/**.tablesaw-bar {
+  background-color: #426164;
+  padding-bottom: 2rem;
+}
+
+.tablesaw-bar .btn, .tablesaw-enhanced .tablesaw-bar .btn {
+  margin-bottom: 0;
+}
+
+.tablesaw-bar .tablesaw-advance a.tablesaw-nav-btn {
+  background: transparent !important;
+}
+
+.tablesaw-advance-dots li i {
+  background: #FFFFFF;
+}
+**/
+
+.fa-plus {
+  color: #FFFFFF;
+  padding-right: 10px;
 }
 
 .mobile-nav {
   background-color: rgba(238, 238, 238, 1);
 }
 
-h1 {
+h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 table {
@@ -104,7 +134,6 @@ table {
   border-right: 2px solid;
   border-color: rgba(226, 226, 226, 1);
   width: 100%;
-  margin-top: 2rem;
 }
 
 th {
@@ -152,13 +181,14 @@ td {
 
 .task-name {
   width: 250px;
-  font-family: "freight-sans-pro";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
   font-size: 16px;
   line-height: 1.42857143;
   text-align: left;
   padding-left: 10px;
   padding-right: 10px;
-  text-transform: uppercase;
 }
 
 .dot {
@@ -188,9 +218,11 @@ svg {
   height: 80px;
 }
 
+/*** Buttons ***/
+
 .btn {
-  color: #FFFFFF;
-  background-color: #426164;
+  color: #777777;
+  background-color: #FFFFFF;
   font-weight: 400;
 }
 
@@ -204,6 +236,12 @@ svg {
   height: 5rem;
 }
 
+.btn-default {
+  border: none;
+}
+
+/****************************************************/
+
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: rgba(238, 238, 238, 0.8);
 }
@@ -215,6 +253,7 @@ svg {
 li#signout {
   text-align: center;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .mobile-add-buttons li {
@@ -222,7 +261,7 @@ li#signout {
 }
 
 .mobile-add-buttons button {
-  height: 3rem;
+  height: 5rem;
   color: #FFFFFF;
   background-color: #173E43;
   border: none;
@@ -281,6 +320,10 @@ li#signout {
 
 @media screen and (max-width: 767px) {
 
+  .phone-hide {
+    display: none;
+  }
+
   .dashboard-nav {
     margin-bottom: 0;
   }
@@ -296,6 +339,34 @@ li#signout {
 
   ul.navbar-nav {
     margin-top: 0;
+  }
+
+  nav li {
+    height: 5rem;
+  }
+
+  nav li:hover {
+    background-color: #173E43;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 15px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: #FFFFFF !important;
+  }
+
+  .btn {
+    height: 100%;
+    border-radius: 0;
+    color: #FFFFFF;
+    background-color: #426164;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  .navbar-right {
+    padding-top: 0;
   }
 
   .table-responsive {

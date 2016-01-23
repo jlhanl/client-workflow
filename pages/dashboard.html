@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>dot Dashboard</title>
+    <title>Daily Dot Dashboard</title>
+
 
     <!-- Bootstrap CSS-->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -13,15 +14,16 @@
     <!-- Table Saw CSS -->
     <link rel="stylesheet" href="../css/tablesaw.css">
 
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700,400italic' rel='stylesheet' type='text/css'>
+
     <!-- Main Style Sheet CSS-->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
  
-    <!-- Fonts -->
-    <script src="https://use.typekit.net/phn7pbg.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/tablesaw.js"></script>
@@ -48,7 +50,7 @@
             <span class="icon-bar bottom-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <img alt="dot" src="../images/dot-logo-dark.png" />
+            <img alt="dot" src="../images/daily-dot.png" />
           </a>
         </div>
 
@@ -58,10 +60,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="add-buttons">
-              <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  NEW TASK</button>
-            </li>
-            <li class="add-buttons">
-              <button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span>  NEW SHOOT</button>
+              <button type="button" class="btn btn-default btn-block"><i class="fa fa-plus"></i>ADD NEW PROJECT</button>
             </li>
             <li id="signout"><a href="index.html">Sign Out</a></li>
           </ul>
@@ -71,10 +70,10 @@
     <div class="container"></div>
     </header>
     <main>
-      <div class="container">
+      <div class="container title-container">
         <div class="row row-centered phone-show">
           <div class="col-sm-4 col-centered">
-            <h1 class="session-name-mobile">Miller Family</h1>
+            <h2 class="session-name-mobile">Current Projects</h2>
           </div>
         </div>
       </div>
