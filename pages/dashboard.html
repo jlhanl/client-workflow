@@ -60,7 +60,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="add-buttons">
-              <button type="button" class="btn btn-default btn-block"><i class="fa fa-plus"></i>ADD NEW PROJECT</button>
+              <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>NEW PROJECT</button>
             </li>
             <li id="signout"><a href="index.html">Sign Out</a></li>
           </ul>
@@ -70,10 +70,26 @@
     <div class="container"></div>
     </header>
     <main>
+    <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Add a New Project</h4>
+            </div>
+            <div class="modal-body">
+              <input>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container title-container">
         <div class="row row-centered phone-show">
           <div class="col-sm-4 col-centered">
-            <h2 class="session-name-mobile">Current Projects</h2>
+            <h2 class="session-name-mobile">Projects</h2>
           </div>
         </div>
       </div>

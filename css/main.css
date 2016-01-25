@@ -1,14 +1,14 @@
 body {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
-  color: #777777;
+  color: #021C1E;
   line-height: 0;
 }
 
 .navbar {
   min-height: 60px;
   border: none;
-  background-color: #426164;
+  background-color: #004445;
   border-radius: 0;
   margin-bottom: 0;
 }
@@ -127,6 +127,7 @@ body {
 h2 {
   text-align: center;
   text-transform: uppercase;
+  color: #021C1E;
 }
 
 table {
@@ -201,6 +202,10 @@ td {
   transition: .3s ease-in-out;
 }
 
+.circle-fill {
+  fill: #2C7873;
+}
+
 .bottom-line { 
   stroke: rgba(226, 226, 226, 1);
   stroke-width: 2;
@@ -221,14 +226,21 @@ svg {
 /*** Buttons ***/
 
 .btn {
-  color: #777777;
+  color: #021C1E;
   background-color: #FFFFFF;
-  font-weight: 400;
+  font-weight: 600;
+  border-radius: 0;
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+.fa-plus {
+  color: #021C1E;
 }
 
 .btn:hover {
-  background-color: #173E43;
-  color: #FFFFFF;
+  opacity: 0.9;
+  color: #021C1E;
 } 
 
 .btn-blk {
@@ -315,6 +327,13 @@ li#signout {
 }
 
 
+/****** MODAL ******/
+
+.modal-content {
+  border-radius: 0;
+}
+
+
 /****** MEDIA QUERIES *****/
 
 
@@ -337,32 +356,50 @@ li#signout {
     margin-bottom: 0;
   }
 
+  .grey-navbar-header {
+    background-color: #888888;
+  }
+
   ul.navbar-nav {
     margin-top: 0;
   }
 
   nav li {
-    height: 5rem;
+    height: 7rem;
   }
 
   nav li:hover {
-    background-color: #173E43;
+    background-color: #426164;
   }
 
   .navbar-nav>li>a {
-    padding-top: 15px;
+    padding-top: 25px;
   }
 
   .navbar-default .navbar-nav>li>a {
     color: #FFFFFF !important;
+    font-weight: 400;
+    font-size: 16px;
   }
 
   .btn {
     height: 100%;
     border-radius: 0;
     color: #FFFFFF;
-    background-color: #426164;
+    background-color: #004445;
     border-bottom: 1px solid #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .fa-plus {
+    color: #FFFFFF;
+  }
+
+  .btn:hover {
+    background-color: #426164;
+    color: #FFFFFF;
   }
 
   .navbar-right {
