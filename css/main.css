@@ -1,14 +1,13 @@
 body {
   background-color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
-  color: #021C1E;
-  line-height: 0;
+  color: #666666;
 }
 
 .navbar {
   min-height: 60px;
   border: none;
-  background-color: #004445;
+  background-color: #2C7873;
   border-radius: 0;
   margin-bottom: 0;
 }
@@ -124,10 +123,11 @@ body {
   background-color: rgba(238, 238, 238, 1);
 }
 
-h2 {
+h3 {
   text-align: center;
   text-transform: uppercase;
-  color: #021C1E;
+  font-weight: 600;
+  color: #666666;
 }
 
 table {
@@ -135,6 +135,7 @@ table {
   border-right: 2px solid;
   border-color: rgba(226, 226, 226, 1);
   width: 100%;
+  line-height: 0;
 }
 
 th {
@@ -184,12 +185,12 @@ td {
   width: 250px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-style: italic;
   font-size: 16px;
   line-height: 1.42857143;
   text-align: left;
   padding-left: 10px;
   padding-right: 10px;
+  text-transform: uppercase;
 }
 
 .dot {
@@ -198,7 +199,7 @@ td {
   cx: 25px;
   fill: #FFFFFF;
   stroke-width: 2;
-  stroke: rgba(226, 226, 226, 1);
+  stroke: #777777;
   transition: .3s ease-in-out;
 }
 
@@ -207,13 +208,13 @@ td {
 }
 
 .bottom-line { 
-  stroke: rgba(226, 226, 226, 1);
+  stroke: #666666;
   stroke-width: 2;
   opacity: 0.5;
 }
 
 .top-line {
-  stroke: rgba(226, 226, 226, 1);
+  stroke: #666666;
   stroke-width: 2;
   opacity: 0.5;
 }
@@ -226,7 +227,7 @@ svg {
 /*** Buttons ***/
 
 .btn {
-  color: #021C1E;
+  color: #666666;
   background-color: #FFFFFF;
   font-weight: 600;
   border-radius: 0;
@@ -235,11 +236,10 @@ svg {
 }
 
 .fa-plus {
-  color: #021C1E;
+  color: #666666;
 }
 
 .btn:hover {
-  opacity: 0.9;
   color: #021C1E;
 } 
 
@@ -333,7 +333,6 @@ li#signout {
   border-radius: 0;
 }
 
-
 /****** MEDIA QUERIES *****/
 
 
@@ -369,7 +368,7 @@ li#signout {
   }
 
   nav li:hover {
-    background-color: #426164;
+    background-color: #004445;
   }
 
   .navbar-nav>li>a {
@@ -386,7 +385,7 @@ li#signout {
     height: 100%;
     border-radius: 0;
     color: #FFFFFF;
-    background-color: #004445;
+    background-color: #2C7873;
     border-bottom: 1px solid #FFFFFF;
     font-weight: 400;
     font-size: 16px;
@@ -398,7 +397,7 @@ li#signout {
   }
 
   .btn:hover {
-    background-color: #426164;
+    background-color: #004445;
     color: #FFFFFF;
   }
 
