@@ -333,6 +333,14 @@ li#signout {
   border-radius: 0;
 }
 
+.form-control {
+  height: 40px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+
 /****** MEDIA QUERIES *****/
 
 
