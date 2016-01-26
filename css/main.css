@@ -12,6 +12,11 @@ body {
   margin-bottom: 0;
 }
 
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+
 .container-fluid, .navbar-header {
   min-height: 60px;
 }
@@ -123,7 +128,7 @@ body {
   background-color: rgba(238, 238, 238, 1);
 }
 
-h3 {
+.session-name-mobile {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
@@ -340,6 +345,78 @@ li#signout {
 }
 
 
+/****** HOME PAGE *******/
+
+.home-nav {
+  background-color: transparent;
+}
+
+.home-hero {
+  background-image: url(../images/image-placeholder.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.home-hero.tint::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+}
+
+.btn-signup {
+  border: 1px solid #FFFFFF;
+  background-color: #2C7873;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+}
+
+.btn-signup:hover {
+  border: 1px solid #FFFFFF;
+  background-color: #2C7873;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+li#signin a {
+  color: #FFFFFF;
+}
+
+#home-headline {
+  margin: 7.5rem auto 2rem auto;
+  font-weight: 600;
+  text-align: center;
+}
+
+#home-button {
+  text-align: center;
+}
+
+#home-subheadline {
+  margin-bottom: 3rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.signup-form {
+  margin: 3rem auto 4.5rem auto;
+}
+
+.home-form {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 0;
+}
 
 /****** MEDIA QUERIES *****/
 
@@ -389,7 +466,7 @@ li#signout {
     font-size: 16px;
   }
 
-  .btn {
+  .btn-new {
     height: 100%;
     border-radius: 0;
     color: #FFFFFF;
@@ -404,7 +481,7 @@ li#signout {
     color: #FFFFFF;
   }
 
-  .btn:hover {
+  .btn-new:hover {
     background-color: #004445;
     color: #FFFFFF;
   }
@@ -499,7 +576,6 @@ li#signout {
   }
 
 }
-
 
 
 

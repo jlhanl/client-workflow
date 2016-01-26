@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>dot Dashboard</title>
+    <title>Daily Dot Dashboard</title>
+
 
     <!-- Bootstrap CSS-->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <!-- Main Style Sheet CSS-->
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
- 
+
+    <!-- Table Saw CSS -->
+    <link rel="stylesheet" href="../css/tablesaw.css">
 
     <!-- Fonts -->
-    <script src="https://use.typekit.net/phn7pbg.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,700,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Main Style Sheet CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+ 
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/tablesaw.js"></script>
+    <script src="../js/tablesaw-init.js"></script>
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,43 +39,73 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img alt="daily dot" src="../images/dot-logo-dark.png" />
-          </a>
-        </div>
+    <div class="container-fluid home-hero tint">
+      <nav class="navbar navbar-default home-nav"> 
+        <div class="container-fluid"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+              <img alt="DAILY DOT" src="../images/daily-dot.png" />
+            </a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Sign In</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Simplify your workflow.</h1>
-        <p><a class="btn btn-primary btn-lg" href="dashboard.html" role="button">Sign Up</a></p>
-      </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="add-buttons">
+                <button type="button" class="btn btn-default btn-block btn-signup">SIGN UP</button>
+              </li>
+              <li id="signin"><a href="index.html">Sign In</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    
+      <main>
+        <div class="container-fluid">
+          <div class="row row-centered">
+            <div class="col-sm-11 col-centered">
+              <h1 id="home-headline">Your portable studio assistant.</h1>
+              <h4 class="phone-hide" id="home-subheadline">The simplest solution to track your workflow and keep clients happy everywhere you go.</h4>
+            </div>
+          </div>
+          <div class="row row-centered">
+            <div class="col-xs-11 col-sm-5 col-centered">
+              <form class="signup-form">
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 form-control-label home-form">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 form-control-label home-form">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+              </form>
+              <p id="home-button"><a class="btn btn-primary btn-lg btn-signup" href="dashboard.html" role="button">Sign Up</a></p>
+            </div>
+          </div>
+        </main>
+      </main>
     </div>
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/circles.js</script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+
   </body>
 </html>
