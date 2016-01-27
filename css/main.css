@@ -232,20 +232,21 @@ svg {
 /*** Buttons ***/
 
 .btn {
-  color: #666666;
-  background-color: #FFFFFF;
-  font-weight: 600;
+  color: #FFFFFF;
+  background-color: transparent;
+  font-weight: 400;
+  border: 1px solid #FFFFFF;
   border-radius: 0;
   margin-top: 9px;
-  margin-right: 10px;
+  margin-right: 2rem;
 }
 
 .fa-plus {
-  color: #666666;
+  color: #FFFFFF;
 }
 
 .btn:hover {
-  color: #021C1E;
+  opacity: 0.8;
 } 
 
 .btn-blk {
@@ -253,9 +254,7 @@ svg {
   height: 5rem;
 }
 
-.btn-default {
-  border: none;
-}
+
 
 /****************************************************/
 
@@ -344,6 +343,17 @@ li#signout {
   box-shadow: none;
 }
 
+#submit-button {
+  border: none;
+  background-color: #2C7873;
+  color: #FFFFFF;
+}
+
+#submit-style {
+  border: none;
+  background-color: #2C7873;
+}
+
 
 /****** HOME PAGE *******/
 
@@ -372,7 +382,7 @@ li#signout {
 }
 
 .btn-signup {
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: #2C7873;
   color: #FFFFFF;
   text-align: center;
@@ -380,7 +390,7 @@ li#signout {
 }
 
 .btn-signup:hover {
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   background-color: #2C7873;
   color: #FFFFFF;
   opacity: 0.8;
@@ -391,9 +401,10 @@ li#signin a {
 }
 
 #home-headline {
-  margin: 7.5rem auto 2rem auto;
+  margin: 15% auto 2rem auto;
   font-weight: 600;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #home-button {
@@ -404,7 +415,7 @@ li#signin a {
   margin-bottom: 3rem;
   font-weight: 200;
   text-align: center;
-  line-height: 2rem;
+  line-height: 1.4;
 }
 
 .signup-form {
@@ -414,7 +425,7 @@ li#signin a {
 .home-form {
   margin-top: 10px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   padding-left: 0;
 }
 
@@ -466,6 +477,10 @@ li#signin a {
     font-size: 16px;
   }
 
+  .btn-default {
+    border: none;
+  }
+
   .btn-new {
     height: 100%;
     border-radius: 0;
@@ -484,6 +499,7 @@ li#signin a {
   .btn-new:hover {
     background-color: #004445;
     color: #FFFFFF;
+    opacity: 1;
   }
 
   .navbar-right {
@@ -555,6 +571,9 @@ li#signin a {
     padding-top: 1.25rem;
   }
 
+  .home-form {
+    padding-left: 15px;
+  }
 
 /***
     position: absolute;
