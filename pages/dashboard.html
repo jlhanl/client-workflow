@@ -26,7 +26,7 @@
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+    
     <script src="../js/tablesaw.js"></script>
     <script src="../js/tablesaw-init.js"></script>
 
@@ -83,64 +83,71 @@
                 <div class="form-group row">
                   <label for="exampleInputName2" class="col-sm-2 form-control-label">Name</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="exampleInputName2" name="field1" required="required"placeholder="Project Name">
+                    <input type="text" class="form-control" id="exampleInputName2" name="field1" required="required" placeholder="Project Name" />
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label class="col-sm-2">Task List</label>
+                  <div class="col-sm-2">
+                    <label>Task List</label>
+                  </div>
                   <div class="col-sm-10 col-md-5">
                     <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> Welcome packet and session info
+                      <label id="selectAll">
+                        <input type="checkbox" class="task-group" id="checkAll" /> Select All
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Session fee and contract
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="welcome" value="1" /> Welcome packet and session info
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Shoot and download session
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="contract" value="1" /> Session fee and contract
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Sort and edit images
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="shoot" value="1" /> Shoot and download session
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Blog session and client email
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="edit" value="1" /> Sort and edit images
                       </label>
                     </div>
                   </div>
                   <div class="col-sm-10 col-md-5">
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Upload gallery and send invitation
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="blog" value="1" /> Blog session and client email
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Schedule ordering session
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="gallery" value="1" /> Upload gallery and send invitation
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Design album/Place order
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="ordering_session" value="1" /> Schedule ordering session
                       </label>
                     </div>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Deliver goods and send thanks
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="place_order" value="1" /> Design album/Place order
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="task-group" name="checkboxes_" id="delivery" value="1" /> Deliver goods and send thanks
                       </label>
                     </div>
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-sm-5 col-sm-offset-7">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-default" id="btn-cancel" data-dismiss="modal">Cancel</button>
                     <button type="button" class="btn btn-default" id="submit-button"><input type="submit" id="submit-style" value="Submit" /></button>
                   </div>
                 </div>
@@ -176,25 +183,25 @@
                     <td class="client-one">
                       <svg>
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-1" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-2" class="circle open-event dot" />   
+                        <circle id="circle" class="circle open-event dot" />   
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-3" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-4" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                   </tr>
@@ -204,12 +211,12 @@
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-5" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                         <style>
-                         circle:hover
-                           {
-                              fill: rgba(250, 229, 150, 1);
+                          circle:hover
+                            {
                               r: 24;
+                              opacity: 0.8;
                             }
                         </style>
                       </svg>
@@ -218,21 +225,21 @@
                       <svg>
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle id="circle-6" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-7" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-8" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -242,28 +249,28 @@
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-9" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-10" class="circle open-event dot" />        
+                        <circle id="circle" class="circle open-event dot" />        
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-11" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-12" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -273,28 +280,28 @@
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-13" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-14" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-15" class="circle open-event dot" />        
+                        <circle id="circle" class="circle open-event dot" />        
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-16" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -304,28 +311,28 @@
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-17" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-18" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-19" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-20" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                   </tr>
@@ -335,28 +342,28 @@
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-21" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-22" class="circle open-event dot" />        
+                        <circle id="circle" class="circle open-event dot" />        
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-23" class="circle open-event dot" />         
+                        <circle id="circle" class="circle open-event dot" />         
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-24" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                   </tr>
@@ -366,28 +373,28 @@
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-25" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-26" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-27" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-28" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                   </tr>
@@ -397,28 +404,28 @@
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-29" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-30" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-31" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
                         <line class="bottom-line" x1="25" y1="60" x2="25" y2="80" />
-                        <circle id="circle-32" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                   </tr>
@@ -427,25 +434,25 @@
                     <td class="client-one">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle id="circle-33" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-two">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle id="circle-34" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-three">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle id="circle-35" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                     <td class="client-four">
                       <svg>
                         <line class="top-line" x1="25" y1="0" x2="25" y2="20" />
-                        <circle id="circle-36" class="circle open-event dot" />
+                        <circle id="circle" class="circle open-event dot" />
                       </svg>
                     </td>
                   </tr>
@@ -459,11 +466,13 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0-beta1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
-
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
     
   </body>
 </html>

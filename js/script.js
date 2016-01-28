@@ -1,15 +1,8 @@
-/// Mobile Nav Cover
-
-//var vHeight = $(window).height(),
-  //  vWidth = $(window).width(),
-    //mobilenav = $('.mobile-nav');
-
-//mobilenav.css({"height":vHeight,"width":vWidth});
-
 //Set Circle IDs
 
 var circleElements = document.querySelectorAll('.circle');
-console.log(circleElements);
+
+//var svg = document.querySelector('.circle');
 
 $(document).ready(function() {
   console.log("Let's roll!");
@@ -18,21 +11,35 @@ $(document).ready(function() {
     $('.navbar-header').toggleClass('grey-navbar-header');
   });
 
-  $('.circle').click(function() {
-    $('this').toggleClass('circle-fill');
+  $('.dot').click(function() {
+    $(this).attr('class', '');
+    $(this).attr('class', 'circle-fill');
   });
 
+  $('.circle-fill').click(function() {
+    $(this).attr('class', '');
+    $(this).attr('class', 'dot');
+  });
+
+
+  $("#checkAll").click(function () {
+    $(".task-group").prop('checked', $(this).prop('checked'));
+  });
+    
+
+
   $('#myform').validate({ // initialize the plugin
-        rules: {
-            field1: {
-                required: true,
-                email: true
-            },
-            field2: {
-                required: true,
-                minlength: 5
-            }
-        }
-    });
+    rules: {
+      field1: {
+        required: true,
+      },
+
+      checkboxes_: {
+        required: true, 
+        minlength: 1
+      },
+    }
+  });
+
 
 });

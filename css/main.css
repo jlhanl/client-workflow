@@ -198,6 +198,16 @@ td {
   text-transform: uppercase;
 }
 
+.circle-fill {
+  r: 20px;
+  cy: 40px;
+  cx: 25px;
+  fill: #2C7873;
+  stroke-width: 2;
+  stroke: #777777;
+  transition: .3s ease-in-out;
+}
+
 .dot {
   r: 20px;
   cy: 40px;
@@ -206,10 +216,6 @@ td {
   stroke-width: 2;
   stroke: #777777;
   transition: .3s ease-in-out;
-}
-
-.circle-fill {
-  fill: #2C7873;
 }
 
 .bottom-line { 
@@ -252,6 +258,13 @@ svg {
 .btn-blk {
   border-radius: 0;
   height: 5rem;
+}
+
+.btn-new:hover {
+  background-color: #004445;
+  color: #FFFFFF; 
+  opacity: 1;
+  border: 1px solid #FFFFFF;
 }
 
 
@@ -354,7 +367,25 @@ li#signout {
   background-color: #2C7873;
 }
 
+#btn-cancel {
+  color: #666666;
+  border: 1px solid #666666;
+}
 
+#exampleInputName2-error {
+  color: red;
+}
+
+#checkboxes_-error {
+  color: red;
+  font-weight: 700;
+  padding-left: 0;
+}
+
+#selectAll {
+  text-transform: uppercase;
+  font-weight: 700;
+}
 /****** HOME PAGE *******/
 
 .home-nav {
