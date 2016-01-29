@@ -26,20 +26,20 @@ $(document).ready(function() {
     $(".task-group").prop('checked', $(this).prop('checked'));
   });
     
+  $('#form').parsley();
 
+  // $('#myform').validate({ // initialize the plugin
+  //   rules: {
+  //     field1: {
+  //       required: true,
+  //     },
 
-  $('#myform').validate({ // initialize the plugin
-    rules: {
-      field1: {
-        required: true,
-      },
-
-      checkboxes_: {
-        required: true, 
-        minlength: 1
-      },
-    }
-  });
+  //     checkboxes_: {
+  //       required: true, 
+  //       minlength: 1
+  //     },
+  //   }
+  // });
 
 
 });

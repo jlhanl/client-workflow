@@ -10,6 +10,7 @@ body {
   background-color: #2C7873;
   border-radius: 0;
   margin-bottom: 0;
+  letter-spacing: 2;
 }
 
 .col-centered{
@@ -202,7 +203,7 @@ td {
   r: 20px;
   cy: 40px;
   cx: 25px;
-  fill: #2C7873;
+  fill: #004445;
   stroke-width: 2;
   stroke: #777777;
   transition: .3s ease-in-out;
@@ -214,7 +215,7 @@ td {
   cx: 25px;
   fill: #FFFFFF;
   stroke-width: 2;
-  stroke: #777777;
+  stroke: #666666;
   transition: .3s ease-in-out;
 }
 
@@ -360,11 +361,23 @@ li#signout {
   border: none;
   background-color: #2C7873;
   color: #FFFFFF;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: 2;
+}
+
+#submit-button:hover {
+  opacity: 1;
+  background-color: #004445;
 }
 
 #submit-style {
   border: none;
   background-color: #2C7873;
+}
+
+#submit-style:hover {
+  background-color: #004445;
 }
 
 #btn-cancel {
@@ -386,6 +399,26 @@ li#signout {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+ul#parsley-id-4 {
+  padding-left: 0;
+}
+
+li.parsley-required {
+  color: red;
+  list-style-type: none;
+}
+
+ul#parsley-id-multiple-checkboxes {
+  padding-left: 0;
+}
+
+li.parsley-mincheck {
+  color: red;
+  list-style-type: none;
+}
+
+
 /****** HOME PAGE *******/
 
 .home-nav {
@@ -432,7 +465,7 @@ li#signin a {
 }
 
 #home-headline {
-  margin: 15% auto 2rem auto;
+  margin: 10% auto 2rem auto;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -450,7 +483,7 @@ li#signin a {
 }
 
 .signup-form {
-  margin: 3rem auto 4.5rem auto;
+  margin: 1rem auto 4.5rem auto;
 }
 
 .home-form {
@@ -460,6 +493,11 @@ li#signin a {
   padding-left: 0;
 }
 
+li.parsley-type {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #FFFFFF;
+  list-style-type: none;
+}
 /****** MEDIA QUERIES *****/
 
 
