@@ -1,6 +1,6 @@
 //Set Circle IDs
 
-var circleElements = document.querySelectorAll('.circle');
+//var circleElements = document.querySelectorAll('.circle');
 
 //var svg = document.querySelector('.circle');
 
@@ -40,6 +40,14 @@ $(document).ready(function() {
   //     },
   //   }
   // });
-
+  
+  // SVGElement.prototype.toggleClass = function('.circle') {
+  //   if (this.hasClass('.dot')) {
+  //     this.removeClass('.dot');
+  //     this.addClass('.circle-fill');
+  //   } else {
+  //     this.addClass('.dot');
+  //   }
+  // };
 
 });
