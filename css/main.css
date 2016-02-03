@@ -203,15 +203,6 @@ td {
   text-transform: uppercase;
 }
 
-.circle-fill {
-  r: 20px;
-  cy: 40px;
-  cx: 25px;
-  fill: #004445;
-  stroke-width: 2;
-  stroke: #777777;
-  transition: .3s ease-in-out;
-}
 
 .dot {
   r: 20px;
@@ -220,6 +211,16 @@ td {
   fill: #FFFFFF;
   stroke-width: 2;
   stroke: #666666;
+  transition: .3s ease-in-out;
+}
+
+.circle-fill {
+  r: 20px;
+  cy: 40px;
+  cx: 25px;
+  fill: #004445;
+  stroke-width: 2;
+  stroke: #777777;
   transition: .3s ease-in-out;
 }
 

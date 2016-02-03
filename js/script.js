@@ -1,5 +1,3 @@
-//Set Circle IDs
-
 //var circleElements = document.querySelectorAll('.circle');
 
 //var svg = document.querySelector('.circle');
